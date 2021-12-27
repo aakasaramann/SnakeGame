@@ -33,7 +33,8 @@ while game_is_on:
         score.increase_score()
 
     # Detect collision with wall
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor(
+    ) > 280 or snake.head.ycor() < -280:
         game_is_on = False
         score.game_over()
 
@@ -43,6 +44,5 @@ while game_is_on:
             game_is_on = False
             score.game_over()
     # If head collides with any segment in the tail
-
 
 screen.exitonclick()

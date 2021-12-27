@@ -1,4 +1,5 @@
 from turtle import Turtle
+
 STARTING_SCORE = 0
 ALIGNMENT = "center"
 FONT = ("Courier", 12, "bold")
